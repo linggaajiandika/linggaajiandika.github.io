@@ -1,42 +1,31 @@
-<meta charset="utf-8">
-<style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Corona Jawa Tengah</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  </body>
+  <div>
+    <button class="tablink" onclick="openPage('map', this, '#f03b20')">Positif Dirawat</button>
+    <button class="tablink" onclick="openPage('map1', this, '#980043')" >Positif Meninggal</button>
+    <button class="tablink" onclick="openPage('map2', this, '#006837')">Positif Sembuh</button>
+    <button class="tablink" onclick="openPage('map3', this, '#253494')">PDP Dirawat</button>
+    <button class="tablink" onclick="openPage('map4', this, '#7a0177')">ODP Proses</button>
 
-body {
-  text-align: center;
-  font-family: arial;
-  background-color: black;
-}
+    <div id="map" class="tabcontent"></div>
+    <div id="map1" class="tabcontent"></div>
+    <div id="map2" class="tabcontent"></div>
+    <div id="map3" class="tabcontent"></div>
+    <div id="map4" class="tabcontent"></div>
+  </div>
+  <!-- This div displays the container, tabs, and map; add title and caption if desired -->
 
-.links line {
-  stroke: #999;
-  stroke-opacity: 0.6;
-}
 
-.nodes circle {
-  stroke: #fff;
-  stroke-width: 1.5px;
-}
-
-div.tooltip {
-    position: absolute;
-    text-align: center;
-    width: 80px;
-    line-height: 40px;
-    padding: 2px;
-    font: 12px sans-serif;
-    background: gold;
-    border: 0px;
-    border-radius: 8px;
-    pointer-events: none;
-}
-
-</style>
-<body text="white">
-  <h2>Social Network Analysis</h2>
-  <p id='Account'>Account: ... </p>
-  <p id='Followers'>Followers: ... </p>
-  <svg width=1024 height=720></svg>
-  <p></p>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="index.js"></script>
-</body>
+  </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
