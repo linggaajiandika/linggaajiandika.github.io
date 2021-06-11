@@ -1,31 +1,312 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Corona Jawa Tengah</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  </body>
-  <div>
-    <button class="tablink" onclick="openPage('map', this, '#f03b20')">Positif Dirawat</button>
-    <button class="tablink" onclick="openPage('map1', this, '#980043')" >Positif Meninggal</button>
-    <button class="tablink" onclick="openPage('map2', this, '#006837')">Positif Sembuh</button>
-    <button class="tablink" onclick="openPage('map3', this, '#253494')">PDP Dirawat</button>
-    <button class="tablink" onclick="openPage('map4', this, '#7a0177')">ODP Proses</button>
+<!doctype html>
+<html lang="en">
 
-    <div id="map" class="tabcontent"></div>
-    <div id="map1" class="tabcontent"></div>
-    <div id="map2" class="tabcontent"></div>
-    <div id="map3" class="tabcontent"></div>
-    <div id="map4" class="tabcontent"></div>
-  </div>
-  <!-- This div displays the container, tabs, and map; add title and caption if desired -->
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- SITE TITLE -->
+    <title>Lingga Aji Andika Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800,900"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/ling sil.png" />
+    <link href="css/plugins.css" rel="stylesheet" />
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- <link href="css/style-dark.css" rel="stylesheet" /> -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
 
+<body data-spy="scroll" data-offset="80">
+    <!-- Start Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+            <img src="images/ling sil.png">
+            <span></span>
+        </div>
+    </div>
+    <!-- End Preloader -->
 
-  </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+    <!-- START NAVBAR -->
+    <header class="header_area">
+        <div class="main_header navbar navbar-default menu-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-4">
+                        <div class="logo">
+                            <a href="index.html" class="navbar-brand">
+                            </a>
+                            <div class="mobile-nav"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 col-sm-10 col-xs-8">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="fa fa-navicon"></span>
+                            </button>
+                        </div>
+
+                        <nav id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--- END CONTAINER -->
+        </div>
+    </header>
+    <!-- END NAVBAR -->
+
+    <!-- START BANNER-SHOW -->
+    <section id="home" class="main_banner banner_bg">
+        <div id="particles-js"></div>
+        <div class="display_table">
+            <div class="display_table_cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="banner_content text-center">
+                                <span class="sm_title">Hello, Welcome to My Portfolio!</span>
+                                <h1 class="cd-headline clip">
+                                    <span class="fw_300">I'm</span>
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible fw_800">Lingga Aji Andika</b>
+                                        <b class="fw_800">Data Scientist</b>
+                                        <b class="fw_800">Data Analyst</b>
+                                        <b class="fw_800">BI Analyst</b>
+                                    </span>
+                                </h1>
+                                <div class="sub_title">
+                                    <span>Learn</span>
+                                    <span>Develop</span>
+                                    <span>Create Impact</span>
+                                </div>
+                                <ul class="banner_social_link">
+                                    <li><a href="https://linkedin.com/in/linggaajiandika"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://github.com/linggaajiandika"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#0"><i class="fab fa-medium-m"></i></a></li>
+                                    <li><a href="https://www.instagram.com/linggaajiandika/"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mouse_scroll">
+            <a href="#about" class="smoothScroll">
+                <div class="mouse">
+                    <i class="fa fa-angle-double-down"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- END BANNER-SHOW -->
+
+    <!-- START ABOUT -->
+    <section id="about" class="section_padding">
+        <div class="container">
+            <div class="single_about">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="about_image">
+                            <img src="images/ling.png" alt="about-image" />
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="about_content_area">
+                            <h4>Hello, I am <span>Lingga Aji Andika</span></h4>
+                            <p>Statistician and Data Enthusiast that focus on Business Analytics, Machine Learning, and
+                                Deep Learning. I capable of Python, R language & Shiny, SQL Query, Tableau, Power BI,
+                                ArcGIS, Google Data Studio. I have experienced in Natural Processing Language (NLP),
+                                Image processing (Deep Learning), doing a statistical project, data mining, data analysis, forecasting, Business Analyst.
+                            </p>
+                            <div class="about_details">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="ct_about">
+                                            <span> Name </span> : Lingga Aji Andika
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="ct_about">
+                                            <span> Address </span>
+                                            : Jakarta, Indonesia
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="ct_about">
+                                            <span> Phone Number </span>
+                                            : +6281223228410
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="ct_about">
+                                            <span> Email </span>
+                                            : linggaajiandika@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- START PORTFOLIO -->
+    <section id="portfolio" class="section_padding">
+        <div class="section_heading text-center">
+            <h2>My Portfolio</h2>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="work_filter text-center wow fadeInDown">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".design">Analytics Projects</li>
+                <li data-filter=".marketing">Dasboard Projects</li>
+                <li data-filter=".Photography">Others</li>
+            </ul>
+        </div>
+
+        <div class="work_content_area">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="item-img">
+                    <img src="images/logo-01.png" alt="" />
+                    <div class="item-img-overlay">
+                        <div class="overlay-info full-width">
+                            <h5>Python</h5>
+                            <p>Read More</p>
+                            <a href="images/portfolio/1.jpg" data-lightbox="images">
+                                <span class="icon"><i class="ti-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item design Photography">
+                <div class="item-img">
+                    <img src="images/Untitled-2-01.png" alt="" />
+                    <div class="item-img-overlay">
+                        <div class="overlay-info full-width">
+                            <h5>Python</h5>
+                            <p>Read More</p>
+                            <a href="images/portfolio/2.jpg" data-lightbox="images">
+                                <span class="icon"><i class="ti-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item Photography marketing">
+                <div class="item-img">
+                    <img src="images/logo-02.png" alt="" />
+                    <div class="item-img-overlay">
+                        <div class="overlay-info full-width">
+                            <h5>Python</h5>
+                            <p>Read More</p>
+                            <a href="images/portfolio/3.jpg" data-lightbox="images">
+                                <span class="icon"><i class="ti-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item design Photography">
+                <div class="item-img">
+                    <img src="images/logo-03.png" alt="" />
+                    <div class="item-img-overlay">
+                        <div class="overlay-info full-width">
+                            <h5>Python</h5>
+                            <p>Read More</p>
+                            <a href="images/portfolio/4.jpg" data-lightbox="images">
+                                <span class="icon"><i class="ti-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item marketing Photography">
+                <div class="item-img">
+                    <img src="images/logo-04.png" alt="" />
+                    <div class="item-img-overlay">
+                        <div class="overlay-info full-width">
+                            <h5>Python</h5>
+                            <p>Read More</p>
+                            <a href="images/portfolio/5.jpg" data-lightbox="images">
+                                <span class="icon"><i class="ti-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item design marketing">
+                <div class="item-img">
+                    <img src="images/logo-05.png" alt="" />
+                    <div class="item-img-overlay">
+                        <div class="overlay-info full-width">
+                            <h5>Python</h5>
+                            <p>Read More</p>
+                            <a href="images/portfolio/6.jpg" data-lightbox="images">
+                                <span class="icon"><i class="ti-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- END PORTFOLIO -->
+
+    <!-- Latest jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/form-contact.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $(' .box ').each(function () {
+                $(this).hoverdir({
+                    hoverDelay: 50,
+                    inverse: true
+                });
+            });
+
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
