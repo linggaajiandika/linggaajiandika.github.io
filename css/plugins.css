@@ -18,7 +18,6 @@
 
 /* == Owl-carousel == */
 @import url("plugins/owl.carousel.min.css");
-@import url("plugins/owl.theme.default.min.css");
 
 /* == Animated-headline == */
 @import url("plugins/animated-headline.css");
@@ -28,6 +27,3 @@
 
 /* == Normalize == */
 @import url("plugins/normalize.css");
-
-/* == Animate == */
-@import url("plugins/animate.css");

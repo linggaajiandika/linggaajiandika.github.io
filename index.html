@@ -9,30 +9,14 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- SITE TITLE -->
     <title>Lingga Aji Andika Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800,900"
-        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="icon" href="images/ling sil.png" />
     <link href="css/plugins.css" rel="stylesheet" />
-    <link href="css/lightbox.min.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
-    <!-- <link href="css/style-dark.css" rel="stylesheet" /> -->
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body data-spy="scroll" data-offset="80">
-    <!-- Start Preloader -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-outter"></div>
-            <div class="loader-inner"></div>
-            <img src="images/ling sil.png">
-            <span></span>
-        </div>
-    </div>
-    <!-- End Preloader -->
-
     <!-- START NAVBAR -->
     <header class="header_area">
         <div class="main_header navbar navbar-default menu-top">
@@ -127,7 +111,7 @@
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="about_content_area">
-                            <h4>Hello, I'm <span>Lingga Aji Andika</span></h4>
+                            <h4>Hello, I am <span>Lingga Aji Andika</span></h4>
                             <p>Statistician and Data Enthusiast that focus on Business Analytics, Machine Learning, and
                                 Deep Learning. I capable of Python, R language & Shiny, SQL Query, Tableau, Power BI,
                                 ArcGIS, Google Data Studio. I have experienced in Natural Processing Language (NLP),
@@ -175,99 +159,117 @@
     <section id="portfolio" class="section_padding">
         <div class="section_heading text-center">
             <h2>My Portfolio</h2>
-            <p>Coming Soon</p>
+            <p>here are some projects that I have completed or are in progress, but some projects I don't show because they are private. click the 'read more' button on each image for details :D</p>
         </div>
-
         <div class="work_filter text-center wow fadeInDown">
             <ul>
                 <li class="active" data-filter="*">All</li>
-                <li data-filter=".design">Analytics Projects</li>
-                <li data-filter=".marketing">Dashboard Projects</li>
-                <li data-filter=".Photography">Others</li>
+                <li data-filter=".analytics">Analytics Projects</li>
+                <li data-filter=".dashbord">Dasboard Projects</li>
+                <li data-filter=".others">Others</li>
             </ul>
         </div>
 
         <div class="work_content_area">
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item analytics">
                 <div class="item-img">
                     <img src="images/logo-01.png" alt="" />
                     <div class="item-img-overlay">
-                        <div class="overlay-info full-width">
+                        <div class="overlay-info full-width text-center">
                             <h5>Python</h5>
-                            <p>Read More</p>
-                            <a href="images/portfolio/1.jpg" data-lightbox="images">
-                                <span class="icon"><i class="ti-arrow-right"></i></span>
-                            </a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                <p>Read More</p>
+                            </button>
+                        </div>
+                    
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            Hello World
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item design Photography">
-                <div class="item-img">
-                    <img src="images/Untitled-2-01.png" alt="" />
-                    <div class="item-img-overlay">
-                        <div class="overlay-info full-width">
-                            <h5>Python</h5>
-                            <p>Read More</p>
-                            <a href="images/portfolio/2.jpg" data-lightbox="images">
-                                <span class="icon"><i class="ti-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item Photography marketing">
-                <div class="item-img">
-                    <img src="images/logo-02.png" alt="" />
-                    <div class="item-img-overlay">
-                        <div class="overlay-info full-width">
-                            <h5>Python</h5>
-                            <p>Read More</p>
-                            <a href="images/portfolio/3.jpg" data-lightbox="images">
-                                <span class="icon"><i class="ti-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item design Photography">
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item analytics">
                 <div class="item-img">
                     <img src="images/logo-03.png" alt="" />
                     <div class="item-img-overlay">
-                        <div class="overlay-info full-width">
-                            <h5>Python</h5>
-                            <p>Read More</p>
-                            <a href="images/portfolio/4.jpg" data-lightbox="images">
-                                <span class="icon"><i class="ti-arrow-right"></i></span>
-                            </a>
+                        <div class="overlay-info full-width text-center">
+                            <h5>R & Shinyapps</h5>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                                <p>Read More</p>
+                            </button>
+                        </div>
+                    
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                coba
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item marketing Photography">
-                <div class="item-img">
-                    <img src="images/logo-04.png" alt="" />
-                    <div class="item-img-overlay">
-                        <div class="overlay-info full-width">
-                            <h5>Python</h5>
-                            <p>Read More</p>
-                            <a href="images/portfolio/5.jpg" data-lightbox="images">
-                                <span class="icon"><i class="ti-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item design marketing">
+            <div class="col-md-3 col-sm-6 col-xs-12 element-item dashbord">
                 <div class="item-img">
                     <img src="images/logo-05.png" alt="" />
                     <div class="item-img-overlay">
-                        <div class="overlay-info full-width">
-                            <h5>Python</h5>
-                            <p>Read More</p>
-                            <a href="images/portfolio/6.jpg" data-lightbox="images">
-                                <span class="icon"><i class="ti-arrow-right"></i></span>
-                            </a>
+                        <div class="overlay-info full-width text-center">
+                            <h5>Tableau</h5>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                                <p>Read More</p>
+                            </button>
+                        </div>
+                    
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                coba
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -289,8 +291,6 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/form-contact.js"></script>
     <script src="js/scrolltopcontrol.js"></script>
     <script src="js/jquery.hoverdir.js"></script>
     <script src="js/wow.min.js"></script>

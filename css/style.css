@@ -434,7 +434,7 @@ a:hover{
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 #nav li.current a {
-	color: #7564e5;
+	color: #e56464;
 	background-color: transparent;
 }
 .main_header.sticky_menu {
@@ -442,7 +442,7 @@ a:hover{
     width: 100%;
     padding: 10px 0;
     top: 0;
-    background: #1d293e;
+    background: #000b31;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -464,34 +464,8 @@ a:hover{
 	color: #fff !important;
 	transition: all 0.3s ease;
 }
-.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a{
-	color: #fff !important;
-	transition: all 0.3s ease;
-}
-.main_header.sticky_menu .navbar-nav > li > a:hover{ color: #7564e5 !important }
-.main_header.sticky_menu .navbar-nav>.active>a, 
-.main_header.sticky_menu .navbar-nav>.active>a:hover,
-.main_header.sticky_menu .navbar-nav>.active>a:focus{
-    color: #7564e5 !important;
-    background-color: transparent;
-}
-.navbar-default .navbar-toggle {
-    border: none;
-    padding: 0;
-	color: #6f64e7;
-    font-size: 20px;
-	margin-top: 10px;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-.main_header.sticky_menu .navbar-toggle .icon-bar {
-    background-color: #7564e5;
-}
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-    background-color: transparent;
-}
+
+
 /* ----------------------------------------------------------------
     [ End Header ]
 -----------------------------------------------------------------*/
@@ -815,17 +789,27 @@ a:hover{
 .work_content_area:hover .item-img-overlay h5{
 	animation: fadeInDown 1000ms ease-in-out;
 }
-.work_content_area .item-img-overlay p {
-	color: #fff;
-	font-weight: 500;
-	font-size: 14px;
-	text-align: center;
-	transition: 2s;
-	margin: 10px 10px 10px 10px;
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    margin: auto;
+    border-radius: 15px;
+    border-color: white;
 }
-.work_content_area:hover .item-img-overlay p{
-	animation: fadeInDown 1300ms ease-in-out;
+
+.btn-primary:hover{
+    background-color: white;
+    color: #000b31;
+    margin: auto;
 }
+
+.btn-primary:focus{
+    background-color: white;
+    color: #000b31;
+    margin: auto;
+}
+
 .work_content_area:hover a{
 	animation: fadeInDown 700ms ease-in-out;
 }
