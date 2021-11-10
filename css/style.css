@@ -11,6 +11,7 @@
 
 
 
+
 /* ----------------------------------------------------------------
 
  ==> Table Of Content
@@ -52,10 +53,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    line-height: 1.8;
-    font-weight: 300;
+    font-weight: normal;
     letter-spacing: 0.5px;
-    color: #666;
+    color: rgb(46, 46, 46);
     overflow-x: hidden;
 }
 h1,
@@ -293,105 +293,6 @@ a:hover{
     [ End Basics ]
 -----------------------------------------------------------------*/
 
-
-
-/* ----------------------------------------------------------------
-    [ 02 Start Buttons ]
------------------------------------------------------------------*/
-/* Start Btn-Style */
-.main_btn {
-    color: #fff;
-    font-size: 14px;
-    margin-top: 30px;
-    text-transform: capitalize;
-    padding: 23px 40px;
-    letter-spacing: 0.6px;
-    font-weight: 600;
-    background: #000;
-    line-height: 10px;
-    border-radius: 30px;
-    border: none;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out 0s;
-    position: relative;
-}
-.dark_bg_btn{
-    color: #000;
-    background: #fff;
-}
-.main_btn:focus,
-.main_btn:hover {
-    color: #fff;
-    background: #000;
-}
-.dark_bg_btn:focus,
-.dark_bg_btn:hover {
-    color: #000;
-    background: #fff;
-}
-.main_btn:before,
-.main_btn:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transition: all 0.5s ease 0s;
-}
-.main_btn:hover:before{
-    background: rgba(255, 255, 255, 0.7);
-    left: 60%;
-    right: 60%;
-}
-.dark_bg_btn:hover:before{
-    background: rgba(0, 0, 0, 0.7);
-    left: 60%;
-    right: 60%;
-}
-.main_btn:hover:after{
-    background: rgba(255, 255, 255, 0.7);
-    top: 60%;
-    bottom: 60%;
-}
-.dark_bg_btn:hover:after{
-    background: rgba(0, 0, 0, 0.7);
-    top: 60%;
-    bottom: 60%;
-}
-.about_btn .contact_number {
-    background: transparent;
-    border: 1px solid #000;
-    padding: 18px 50px;
-    margin-top: 29px;
-    border-radius: 30px;
-    position: absolute;
-    right: 47%;
-}
-.about_btn .dark_cn {
-    background: transparent;
-	color: #fff;
-    border: 1px solid #fff;
-}
-.about_btn .contact_number:focus{
-    background: transparent;
-    border: 1px solid #000;
-	box-shadow: none;
-}
-.about_btn .dark_cn:focus{
-    background: transparent;
-    border: 1px solid #fff;
-	box-shadow: none;
-}
-.blog_btn {
-    padding: 20px 30px;
-}
-/* ----------------------------------------------------------------
-    [ End Buttons ]
------------------------------------------------------------------*/
-
-
-
 /* ----------------------------------------------------------------
     [ 03 Start Header ]
 -----------------------------------------------------------------*/
@@ -470,7 +371,46 @@ a:hover{
     [ End Header ]
 -----------------------------------------------------------------*/
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  .vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;}
+    
+    .vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;}
+    
+    .modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching 
+    full width */
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;}
 
 /* ----------------------------------------------------------------
     [ 04 Start Banner ]
@@ -482,7 +422,7 @@ a:hover{
 	top: 0;
 }
 .main_banner{
-	height: 720px;
+	height: 800px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -657,7 +597,9 @@ a:hover{
 .about_content_area{
 	margin-top: 35px;
 }
-
+.grey_section_padding{
+    background: #fafafa;
+}
 .about_content_area p{
     text-align: justify;
     text-justify: inter-word;
@@ -695,6 +637,7 @@ a:hover{
 /* ----------------------------------------------------------------
     [ 08 Start Works ]
 -----------------------------------------------------------------*/
+
 .work_filter ul {
 	padding: 0;
 	list-style: none;
@@ -810,9 +753,30 @@ a:hover{
     margin: auto;
 }
 
+.btn-secondary {
+    background-color: #000b31!important;
+    color: white !important;
+    margin: auto;
+    border-radius: 15px;
+    
+}
+.modal-title {
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.btn-secondary:focus {
+    background-color: #000b31;
+    color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+
 .work_content_area:hover a{
 	animation: fadeInDown 700ms ease-in-out;
 }
+
+
 /* ----------------------------------------------------------------
     [ End Works ]
 -----------------------------------------------------------------*/
